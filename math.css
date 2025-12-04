@@ -1,0 +1,102 @@
+body{
+    background-image: linear-gradient(to bottom , #49a0d8 , #0f3966 );
+    background-color: #0f3966;
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 5px black;
+    animation: slideLR 5s ease-in-out infinite;
+}
+
+@keyframes slideLR {
+    0%   { background: translateX(black) ; }
+    50%  { color:black; }
+    100% { color: white; }
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    color: black;
+    filter: blur(10000px);
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    box-shadow: 5px black;
+    animation: slideLR 5s ease-in-out infinite;
+}
+
+@keyframes slideLR {
+    0%   { background: translateX(black) ; }
+    50%  { color:black; }
+    100% { color: white; }
+}
+
+nav{
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a{
+   color: white;
+   text-decoration: none;
+   font-size: 40px;
+   padding: 0 10px;
+   position: relative;
+   transition: .3s ease-out;
+}
+
+nav a::before{
+  content: "";
+  width: 100%;
+  height: 0;
+  background: white;
+  border-radius: 5px;
+  position: absolute;
+  inset: 0;
+  margin:0 auto;
+  z-index: -1;
+  transition: .7s ease-out;
+}
+
+nav a:hover::before{
+  height: 100%;
+}
+
+nav a:hover{
+  color: black;
+}
+
+nav{
+  top: 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+a{
+  text-align: center;
+  margin: 0 auto;
+}
+
+ul{
+    display: flex;
+  list-style: none;
+    gap: 50px;
+}
