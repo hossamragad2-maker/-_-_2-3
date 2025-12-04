@@ -1,0 +1,58 @@
+body{
+    background-image: linear-gradient(to bottom , #49a0d8 , #0f3966 );
+    background-color: #0f3966;
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    box-shadow: 5px black;
+    animation: slideLR 2s ease-in-out infinite;
+}
+
+
+button{
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    height: 100px;
+    background: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 150px;
+    font-size: 30px;
+    box-shadow: 15px 20px 25px rgb(20, 7, 7);
+    cursor: pointer;
+    transition: 0.7s;
+
+}
+
+a{
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+
+*{
+  font-family: "Ubuntu", sans-serif;
+}
+
+button:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid white ;
+    transform: scale(1.1);
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+@keyframes slideLR {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(10px); } /* يمين */
+    100% { transform: translateX(0); }    /* يرجع مكانه */
+}

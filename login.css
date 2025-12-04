@@ -1,0 +1,92 @@
+body{
+    background-image: linear-gradient(to bottom , #49a0d8 , #0f3966 );
+    background-color: #0f3966;
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    box-shadow: 5px black;
+    animation: slideLR 5s ease-in-out infinite;
+}
+
+div{
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 15px 20px 25px rgba(0, 0, 0, 0.3);
+    width: 85% ;
+    height: 50% ;
+    margin: 0 auto;
+    border-radius: 10% ;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    box-shadow: 5px black;
+    animation: slideLR 5s ease-in-out infinite;
+    font-size: 32px;
+}
+
+input[type=text]{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    transition: 0.7s;
+}
+
+input[type=password]{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    transition: 0.7s;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 150px;
+    font-size: 25px;
+    font-weight: 900;
+    box-shadow: 15px 20px 25px rgb(20, 7, 7);
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+button:hover{
+    background: transparent;
+    color: white;
+    border: 1px solid white ;
+    transform: scale(1.1);
+}
+
+input[type=text]:hover{
+    background: transparent;
+    border: 1px solid white ;
+    transform: scale(1.1);
+}
+
+input[type=password]:hover{
+    background: transparent;
+    border: 1px solid white ;
+    transform: scale(1.1);
+}
+
+@keyframes slideLR {
+    0%   { background: translateX(black) ; }
+    50%  { color:black; }
+    100% { color: white; }
+}
